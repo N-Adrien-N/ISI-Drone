@@ -1,0 +1,10 @@
+
+Ajout d'une nouvelle colonne à la table user pour marquer si l'utilisateur est actif ou non
+
+ALTER TABLE `isidrone`.`user` 
+ADD COLUMN `is_active` VARCHAR(10) NOT NULL AFTER `type_utilisateur`;
+
+Mise à jour de la colonne is_active` pour les utilisateurs déjà existants
+
+UPDATE `isidrone`.`user` SET `is_active` = 'ACTIVE' WHERE (`id` = '1');
+UPDATE `isidrone`.`user` SET `is_active` = 'ACTIVE' WHERE (`id` = '2');

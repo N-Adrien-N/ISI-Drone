@@ -1,0 +1,11 @@
+13 Faire une page d'administration qui liste toutes les catégories insérées dans la base de données
+
+- Creation de la page listCategories.jsp
+
+- Ajout du champs order dans la classe Category
+
+- Modification du constructeur de la classe Category pour prendre en compte le champs order
+
+- Modification de la Classe MCategory pour prendre en compte le nouveau constructeur de la classe Category
+
+- Modification de loginState.jsp pour ajouter le lien Liste de catégories

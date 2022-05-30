@@ -1,0 +1,25 @@
+
+cette requette va permettre de changer les ligne de la table address pour contenir l'id 1
+IMPORTANT il faut imperativement choisir un state qui existe dans la table province si non ca va vous retourner une erreur
+UPDATE address
+SET state = 20 where id > 0;
+
+
+cette requette va permettre de changer le type de la column state
+ALTER TABLE `isidrone`.`address` 
+CHANGE COLUMN `state` `state` INT(11) NOT NULL ;
+
+
+cette requette va permettre de faire en sort a se que la column state contienne une foreign key de id de la table procinve
+
+ALTER TABLE `isidrone`.`address` 
+ADD CONSTRAINT `state`
+  FOREIGN KEY (`state`)
+  REFERENCES `isidrone`.`provinces` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+cette requette va permetre d'ajouter une column phone non nullable
+ALTER TABLE `isidrone`.`address` 
+ADD COLUMN `phone` VARCHAR(45) NOT NULL AFTER `country`;

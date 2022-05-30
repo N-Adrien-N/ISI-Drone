@@ -1,0 +1,7 @@
+10 Faire une page d'ajout de produit qui sera disponible seulement pour les utilisateurs possédant les droits d'administration du site
+
+- Recuperation de la liste des categories dans la servlet NewProduct
+
+- Changement du champ categorie de input a select dans la page newProduct.jsp
+
+- Test d'ajout d'un produit avec ces changements

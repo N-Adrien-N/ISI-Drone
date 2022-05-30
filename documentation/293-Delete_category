@@ -1,0 +1,7 @@
+- Creation d'une page confirmDeleteCategory.jsp
+
+- Creation de la servlet ConfirmDeleteCategory
+
+- Creation des fonctions getCategory et deleteCategory dans la classe MCategory
+
+- Creation des fonctions getCategory dans la classe ActionCategory

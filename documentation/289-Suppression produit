@@ -1,0 +1,7 @@
+- Ajout du bouton Supprimer dans la page items.jsp pour un administrateur
+
+- Ajout du bouton Supprimer dans la page items.jsp pour un administrateur
+
+- Ajout de la fonction deleteItem dans la classe ActionItems
+
+- Modification de la fonction doPost pour considerer l'option suppression

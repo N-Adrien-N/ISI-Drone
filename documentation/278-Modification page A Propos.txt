@@ -1,0 +1,3 @@
+ Page "A Propos" :
+ 
+ Ajout des 7 membres de l'equipe actuelle de developpeurs, sans supprimer les 2 webmasters + amelioration visuelle de l'affichage des elements dans la page (photos/bulle des membres)

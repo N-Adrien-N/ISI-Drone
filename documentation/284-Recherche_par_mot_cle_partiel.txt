@@ -1,0 +1,5 @@
+- Extraire l'attribut contenant le mot cle
+
+- Affichage du message: Résultat de recherche en fonction du mot clé « Mot clé recherché ici »
+
+- Modification de la requete dans la fonction 

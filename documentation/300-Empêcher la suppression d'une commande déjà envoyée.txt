@@ -1,0 +1,21 @@
+
+Script à exécuter pour ajouter de nouvelles commandes à votre base de données
+
+Etape 1:
+
+Afficher les informations de la table order de la BD:
+
+SELECT * FROM isidrone.order
+
+Etape 2:
+
+Ajouter de nouvelles commandes à l'utilisateur portant l'id 1 (vous pouvez l'éxécuter 2 ou 3 fois pour ajouter plusieurs commandes):
+
+insert into isidrone.order(user_id,date,is_shipped) VALUES (1,now(),1);
+
+Etape 3:
+
+Ajouter des commandes qui n'ont pas encore été expédiées avec le script suivant:
+
+insert into isidrone.order(user_id,date,is_shipped) VALUES (1,now(),0);
+

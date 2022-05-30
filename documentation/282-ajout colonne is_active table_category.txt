@@ -1,0 +1,7 @@
+
+Executer le script suivant pour modifier la table category 
+
+
+ALTER TABLE `isidrone`.`category` 
+ADD COLUMN `is_active` TINYINT NOT NULL DEFAULT 1 AFTER `order`;
+

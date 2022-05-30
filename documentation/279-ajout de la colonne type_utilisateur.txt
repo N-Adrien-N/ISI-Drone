@@ -1,0 +1,38 @@
+1 dans MySQL Workbench selectionner la base isidrone
+
+2 executer le code suivant pour ajouter la colonne type_utilisateur
+
+ALTER TABLE `isidrone`.`user` 
+ADD COLUMN `type_utilisateur` VARCHAR(20) AFTER `ship_address_id`;
+
+3 executer le code suivant pour ajouter un nouveau admin
+
+
+INSERT INTO `isidrone`.`user`
+(`lastName`,
+`firstName`,
+`email`,
+`password`,
+`ship_address_id`,
+`type_utilisateur`)
+VALUES
+('riahi',
+'kadhem',
+'kadhem@gmail.com',
+'5537ebbcb97e99637305eea2b38ade51daa644ef',
+1,
+'ADMIN');
+
+4 pour se connecter en tant qu'admin utiliser le mail 'kadhem@gmail.com' et le pwd 'Abc123!!!' 
+
+
+**************************************************MODIFICATION A AJOUTER*******************************************
+
+/***** 1- MODIFICATION DES DONNEES DEJA ENREGISTREES *****/
+
+UPDATE `user` SET type_utilisateur ='CLIENT' WHERE id <> 4
+ 		/* 4 = id de l'utilisateur avec un type different de null */
+
+/***** 2- AJOUT DE CONTRAINTE DANS LA COLONNE *****/
+ALTER TABLE `isidrone`.`user` 
+CHANGE COLUMN `type_utilisateur` `type_utilisateur` VARCHAR(20) NOT NULL ;

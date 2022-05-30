@@ -1,0 +1,10 @@
+6 Préparer la table order de la base de données pour permettre la prise en compte qu'une commande est présentement en cours d'expédition en ajoutant un champ is_shipped (valeur 0 ou 1)
+
+Dans MySQL Workbench ou a partir de l'invite de commande, faire:
+1) use isidrone;
+2) ALTER TABLE `order` ADD COLUMN is_shipped tinyint NOT NULL DEFAULT 0;
+
+/********* AJOUT DE CONTRAINTE : LIMITE LA VALEUR DE LA COLONNE A 1 (0 ou 1 )
+
+	ALTER TABLE `order`
+	CHANGE COLUMN `is_shipped ` `is_shipped ` tinyint (1) NOT NULL DEFAULT 0;

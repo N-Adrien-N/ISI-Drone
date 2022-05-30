@@ -1,0 +1,11 @@
+20 Dans la page de liste de commandes qui se trouve dans l'administration, ajouter une option permettant de supprimer une commande.
+
+- Creation du lien de suppression dans la page listOrders.jsp
+
+- Creation de la page de Confirmation confirmDeleteOrder.jsp
+
+- Creation de la servlet ConfirmDeleteOrder.java
+
+- Ajout de la fonction deleteOrder dans la classe MOrder
+
+- Test en local

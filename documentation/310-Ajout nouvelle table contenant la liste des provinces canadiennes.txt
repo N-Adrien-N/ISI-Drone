@@ -1,0 +1,33 @@
+
+creation de la table provinces
+id: id de la province
+name : nom de la province
+Il n'y a pas de lien de cette table a une autre table
+
+/***** CREATION DE LA TABLE *****/
+
+DROP TABLE IF EXISTS `provinces`;
+CREATE TABLE `provinces` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+/***** INSERTION DONNEES DE LA TABLE *****/
+
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Alberta');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Colombie-Britannique');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Île-du-Prince-Édouard');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Manitoba');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Nouveau-Brunswick');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Nouvelle-Écosse');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Ontario');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Québec');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Saskatchewan');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Terre-Neuve-et-Labrador');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Territoires-du-Nord-Ouest');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Nunavut');
+INSERT INTO `isidrone`.`provinces` (`name`) VALUES ('Yukon');
+
+
